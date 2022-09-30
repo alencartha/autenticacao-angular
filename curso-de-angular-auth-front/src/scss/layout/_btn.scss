@@ -1,0 +1,16 @@
+.btn-vermelho{
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    margin-top: 25px;
+    border-radius: 10px;
+    color: $branco;
+    background: $vermelho;
+    border: 0;
+    font-size: 18px;
+
+    &:disabled{
+        cursor: pointer;
+        background: darken($color: $vermelho, $amount: 0);
+    }
+}
