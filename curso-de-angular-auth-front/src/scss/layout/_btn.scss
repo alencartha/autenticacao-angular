@@ -10,7 +10,7 @@
     font-size: 18px;
 
     &:disabled{
-        cursor: pointer;
-        background: darken($color: $vermelho, $amount: 0);
+        cursor: not-allowed;
+        background: darken($color: $vermelho, $amount: 20);
     }
 }
