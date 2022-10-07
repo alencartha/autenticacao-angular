@@ -18,7 +18,10 @@ export class AuthService {
       }),
       catchError((err)=>{
         console.log(err)
-        return throwError(()=> err)
+        if(err.error.message)
+          return throwError(()=> err.error.message)
+        
+          return throwError(()=> "No momento nao conseguimos validar od dados, tente novamente mais tarde")
       })
     )
   }
